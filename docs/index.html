@@ -206,32 +206,6 @@
       font-weight: 500;
     }
 
-    /* ─── PROJECTS ─── */
-    #projects .project-item {
-      display: grid; grid-template-columns: 60px 1fr;
-      gap: 2rem; padding: 2.5rem 0;
-      border-top: 1px solid var(--line);
-      transition: padding-left 0.2s;
-    }
-    #projects .project-item:last-child { border-bottom: 1px solid var(--line); }
-    #projects .project-item:hover { padding-left: 1rem; }
-    .proj-num {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.72rem; color: var(--muted2); padding-top: 0.3rem;
-    }
-    .proj-content {}
-    .proj-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.3rem; font-weight: 700;
-      color: var(--white); margin-bottom: 0.5rem; letter-spacing: -0.01em;
-    }
-    .proj-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.8; font-weight: 300; margin-bottom: 1rem; }
-    .proj-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .proj-tag {
-      font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--muted); border: 1px solid var(--muted2);
-      padding: 0.25rem 0.7rem; border-radius: 2px; font-weight: 500;
-    }
 
     /* ─── CONTACT ─── */
     #contact .contact-inner {
@@ -294,7 +268,6 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a class="nav-resume" href="./Narasimha--CV.pdf" download>Resume ↓</a>
     </div>
@@ -413,38 +386,12 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-inner">
-      <div class="section-meta fade-in">
-        <span class="section-num">03 — Projects</span>
-        <div class="section-line"></div>
-      </div>
-      <h2 class="section-title fade-in">Things<br><span class="dim">I've Built</span></h2>
-      <div>
-        <div class="project-item fade-in">
-          <div class="proj-num">01</div>
-          <div class="proj-content">
-            <div class="proj-title">Airline Ticket Price Prediction</div>
-            <p class="proj-desc">Built a regression-based model to forecast airline ticket prices based on travel data. Performed data preprocessing, feature engineering, and model evaluation achieving low Mean Absolute Error (MAE).</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">Scikit-learn</span>
-              <span class="proj-tag">Pandas</span>
-              <span class="proj-tag">NumPy</span>
-              <span class="proj-tag">ML</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
       <div class="section-meta fade-in">
-        <span class="section-num">04 — Contact</span>
+        <span class="section-num">03 — Contact</span>
         <div class="section-line"></div>
       </div>
       <div class="contact-inner">

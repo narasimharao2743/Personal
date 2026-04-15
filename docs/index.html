@@ -27,26 +27,8 @@
       background: var(--black);
       color: var(--white);
       overflow-x: hidden;
-      cursor: none;
     }
 
-    /* ─── CUSTOM CURSOR ─── */
-    .cursor {
-      position: fixed; width: 8px; height: 8px;
-      background: var(--white); border-radius: 50%;
-      pointer-events: none; z-index: 9999;
-      transform: translate(-50%, -50%);
-      transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
-    }
-    .cursor-ring {
-      position: fixed; width: 36px; height: 36px;
-      border: 1px solid rgba(255,255,255,0.4); border-radius: 50%;
-      pointer-events: none; z-index: 9998;
-      transform: translate(-50%, -50%);
-      transition: transform 0.12s ease-out, width 0.2s, height 0.2s, border-color 0.2s;
-    }
-    body:has(a:hover) .cursor { width: 12px; height: 12px; background: var(--white); }
-    body:has(a:hover) .cursor-ring { width: 50px; height: 50px; border-color: rgba(255,255,255,0.6); }
 
     /* ─── NAV ─── */
     nav {
@@ -216,7 +198,7 @@
       font-weight: 300;
     }
     .exp-bullets li::before {
-      content: '—'; position: absolute; left: 0; color: var(--muted2);
+      content: '▹'; position: absolute; left: 0; color: var(--muted2);
     }
     .exp-date-col {
       font-size: 0.78rem; color: var(--muted);
@@ -305,10 +287,6 @@
   </style>
 </head>
 <body>
-
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
 
   <!-- NAV -->
   <nav>
@@ -508,19 +486,6 @@
   </footer>
 
   <script>
-    // Custom cursor
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursor-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    function animateCursor() {
-      cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-      rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
     // Fade in
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });

@@ -1,0 +1,133 @@
+% -------------------------------------------------
+% Narasimharao Bhavirisetty – Capgemini Resume
+% -------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{times}
+
+% ----- Remove blue boxes & underlines from links -----
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+    hidelinks
+}
+
+% ----- Page layout -----
+\geometry{a4paper, margin=0.75in}
+\pagestyle{empty}
+
+% ----- Section heading style -----
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% ----- Tighten itemize globally -----
+\setlist[itemize]{topsep=1pt, partopsep=0pt, parsep=1pt, itemsep=1pt, leftmargin=*}
+
+% ----- Compact project environment -----
+\newenvironment{project}[1]
+  {\par\textbf{#1}\hfill\textit{Python, Scikit-learn, Pandas, NumPy}\vspace{1pt}\begin{itemize}}
+  {\end{itemize}\vspace{2pt}}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+  {\huge\textbf{Narasimharao Bhavirisetty}}\\[3pt]
+  Narasaraopet, Andhra Pradesh, India \\[1pt]
+  +91 63032 27485 \textbullet{} narasimharao2743@gmail.com \textbullet{}
+  linkedin.com/in/narasimharao-bhavirisetty-0526891b0
+\end{center}
+
+\vspace{6pt}
+
+% ==================== PROFESSIONAL SUMMARY ====================
+\section*{Professional Summary}
+\vspace{1pt}\hrule\vspace{4pt}
+Results-driven Software Engineer with 1.5+ years of experience in software development, maintenance, and optimization of production systems using object-oriented programming principles. Proficient in Python, REST APIs, database management, and agile practices. Capable of working independently with minimal supervision while collaborating effectively as a team player to deliver accurate and reliable software solutions. Solid knowledge of SDLC, debugging, code reviews, and clean code practices.
+
+% ==================== SKILLS ====================
+\section*{Skills}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item \textbf{Languages}: Python, Java
+  \item \textbf{Frameworks}: Flask, PyFlink
+  \item \textbf{Databases}: MySQL, MSSQL, ClickHouse, Redis
+  \item \textbf{Concepts}: OOP, Agile, SDLC, REST API Design, Unit Testing, Debugging, Code Reviews, Technical Documentation, Version Control (Git), Clean Code Practices
+  \item \textbf{Libraries}: NumPy, Pandas, Scikit-learn
+  \item \textbf{Tools}: Git, Postman, VS Code
+  \item \textbf{Other Skills}: Data Cleaning, Automation, Machine Learning Algorithms, Stream Processing
+  \item \textbf{Event Streaming}: Kafka, Redpanda
+  \item \textbf{Blockchain}: Solana, Pump.fun, Protobuf
+  \item \textbf{Cloud}: AWS Basics
+\end{itemize}
+
+% ==================== PROFESSIONAL EXPERIENCE ====================
+\section*{Professional Experience}
+\vspace{1pt}\hrule\vspace{4pt}
+
+\textbf{Software Engineer} \hfill \textbf{Spizen Technologies (CLR3 Ventures), Bangalore, India} \\
+\textit{December 2025 -- Current}
+\begin{itemize}
+  \item Designed and developed an end-to-end real-time data pipeline with multiple software components processing blockchain trade and lifecycle events through Kafka, ClickHouse, and Redis.
+  \item Developed PyFlink streaming jobs with tumbling window aggregations to deduplicate high-velocity event data across Kafka topics with fault-tolerant checkpointing.
+  \item Built a behavioral classification system using object-oriented design and pattern analysis to detect anomalous activity, improving data quality and signal reliability.
+  \item Engineered a real-time composite scoring engine processing live event streams, working independently to deliver the solution end-to-end with minimal supervision.
+\end{itemize}
+
+\textbf{Software Engineer} \hfill \textbf{Algonox Technologies Pvt Ltd, Hyderabad, India} \\
+\textit{September 2024 -- December 2025}
+\begin{itemize}
+  \item Built automated email notification system for file queue transitions and failure alerts, improving SLA compliance.
+  \item Implemented complex business rules to clean and validate noisy data, boosting data extraction accuracy by 40\%.
+  \item Designed automated KPI reporting system to track extraction accuracy and manual intervention rates, enabling data-driven performance improvements.
+  \item Developed User Dormancy Management Module with scheduled tasks to manage user lifecycle states based on inactivity thresholds, enhancing security and access control.
+  \item Collaborated with cross-functional teams in agile development cycles, contributed to code reviews, and maintained clean, well-documented Python codebases.
+\end{itemize}
+
+% ==================== EDUCATION ====================
+\section*{Education}
+\vspace{1pt}\hrule\vspace{4pt}
+\textbf{Bachelor of Technology in Computer Science} \hfill \textbf{Tirumala Engineering College, Narasaraopet} \\
+\textit{January 2021 -- May 2024} \quad SGPA: 7.86 | Percentage: 74.67\%
+
+\textbf{Intermediate (MPC)} \hfill \textbf{Bhavana Junior College, Narasaraopet} \\
+\textit{June 2018 -- March 2020}
+
+\textbf{Secondary School Certificate} \hfill \textbf{Sindhu High School, Narasaraopet} \\
+\textit{June 2017 -- March 2018}
+
+\vspace{6pt}
+
+% ==================== PERSONAL PROJECTS ====================
+\section*{Personal Projects}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{project}{Predicting Airline Ticket Prices Using Machine Learning}
+  \item Built a regression-based model using Scikit-learn to forecast airline ticket prices based on travel data.
+  \item Performed data preprocessing, feature engineering, and model evaluation, achieving low Mean Absolute Error (MAE).
+  \item Presented key pricing insights and visualizations to guide strategic decisions.
+\end{project}
+
+% ==================== CERTIFICATIONS ====================
+\section*{Certifications}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item Cloud Computing, NPTEL
+  \item AI and Machine Learning, Amazon Web Services (AWS)
+\end{itemize}
+
+% ==================== INTERESTS ====================
+\section*{Interests}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item Problem Solving \& Automation
+  \item Economics, Business \& Finance
+  \item AI Innovations \& Tech Trends
+\end{itemize}
+
+\end{document}

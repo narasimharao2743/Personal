@@ -1,0 +1,133 @@
+% -------------------------------------------------
+% Narasimharao Bhavirisetty – Deloitte Data Engineer Resume
+% -------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{times}
+
+% ----- Remove blue boxes & underlines from links -----
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+    hidelinks
+}
+
+% ----- Page layout -----
+\geometry{a4paper, margin=0.75in}
+\pagestyle{empty}
+
+% ----- Section heading style -----
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% ----- Tighten itemize globally -----
+\setlist[itemize]{topsep=1pt, partopsep=0pt, parsep=1pt, itemsep=1pt, leftmargin=*}
+
+% ----- Compact project environment -----
+\newenvironment{project}[2]
+  {\par\textbf{#1}\hfill\textit{#2}\vspace{1pt}\begin{itemize}}
+  {\end{itemize}\vspace{2pt}}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+  {\huge\textbf{Narasimharao Bhavirisetty}}\\[3pt]
+  Data Engineer \textbullet{} Backend \& Data Pipeline Engineering \\[3pt]
+  Narasaraopet, Andhra Pradesh, India \textbullet{} +91 63032 27485 \textbullet{} narasimharao2743@gmail.com \textbullet{} linkedin.com/in/narasimharao-bhavirisetty-0526891b0
+\end{center}
+
+\vspace{6pt}
+
+% ==================== PROFESSIONAL SUMMARY ====================
+\section*{Professional Summary}
+\vspace{1pt}\hrule\vspace{4pt}
+Data Engineer with 1.6+ years of hands-on experience building scalable data pipelines, automating workflows, and delivering analytics-driven solutions. Proficient in Python, SQL, and stream processing technologies including Kafka and PyFlink — with proven experience processing 50K+ events/day through multi-stage pipelines into columnar data stores. Experienced in data preprocessing, KPI reporting, and building ML models using Scikit-learn, Pandas, and NumPy. Comfortable working across the full data lifecycle: ingestion, transformation, analysis, and reporting — with a strong focus on data quality, automation, and measurable business outcomes.
+
+% ==================== TECHNICAL SKILLS ====================
+\section*{Technical Skills}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item \textbf{Languages}: Python, Java, SQL, PL/SQL
+  \item \textbf{Data Engineering}: Kafka, Redpanda, PyFlink, Event-Driven Architecture, Data Pipelines, ETL/ELT Workflows
+  \item \textbf{Databases \& Warehouses}: MySQL, MSSQL, ClickHouse (columnar), Redis
+  \item \textbf{Big Data \& Cloud}: AWS (S3, basics), Spark (awareness), Snowflake (awareness), Databricks (awareness)
+  \item \textbf{Data Science \& ML}: Scikit-learn, Pandas, NumPy, EDA, Predictive Modelling, Statistical Analysis
+  \item \textbf{Tools}: Jupyter Notebooks, Git, Docker, Postman, VS Code
+  \item \textbf{Concepts}: OOP, Agile/Scrum, SDLC, Unit Testing, Data Quality, Technical Documentation, Clean Code
+  \item \textbf{Frameworks}: Flask, FastAPI, Microservices
+\end{itemize}
+
+% ==================== PROFESSIONAL EXPERIENCE ====================
+\section*{Professional Experience}
+\vspace{1pt}\hrule\vspace{4pt}
+
+\textbf{Software Engineer --- Data \& Pipeline Engineering} \hfill \textbf{Spizen Technologies (CLR3 Ventures), Bangalore} \\
+\textit{December 2025 -- Present}
+\begin{itemize}
+  \item Designed and owned an end-to-end data pipeline processing 50K+ trade events/day through a multi-stage Kafka $\rightarrow$ PyFlink $\rightarrow$ ClickHouse $\rightarrow$ Redis architecture, enabling real-time analytics on token lifecycle events.
+  \item Built fault-tolerant PyFlink streaming jobs with tumbling-window aggregations and checkpointing, reducing duplicate event records by $\sim$95\% and ensuring downstream data integrity.
+  \item Engineered a behavioral classification system using Python and pattern analysis to detect anomalous trading activity, improving data signal quality and reliability for analytics consumers.
+  \item Designed a real-time composite scoring engine that fuses multi-dimensional metrics from live event streams, emitting sub-second actionable signals for data-driven decision-making.
+  \item Maintained technical documentation for data architecture, pipeline components, and schema interfaces to ensure reproducibility and team knowledge continuity.
+\end{itemize}
+
+\newpage
+\textbf{Software Engineer --- Data \& Automation} \hfill \textbf{Algonox Technologies Pvt Ltd, Hyderabad} \\
+\textit{September 2024 -- December 2025}
+\begin{itemize}
+  \item Boosted document data extraction accuracy by 40\% by designing multi-layered business rule validation to clean, reconcile, and preprocess noisy unstructured data at scale.
+  \item Built an automated data workflow and email notification system for file queue transitions and SLA failure alerts, reducing manual monitoring overhead and improving response time.
+  \item Developed an automated KPI reporting module tracking extraction accuracy and manual intervention rates, enabling data-driven performance reviews and a 20\% reduction in manual QA effort.
+  \item Implemented a User Dormancy Management Module with scheduled tasks to enforce role-based lifecycle state transitions on configurable inactivity thresholds, strengthening data access governance and security compliance.
+  \item Participated actively in Agile/Scrum ceremonies; contributed to code reviews and maintained clean, well-documented Python codebases.
+\end{itemize}
+
+% ==================== PERSONAL PROJECTS ====================
+\section*{Personal Projects}
+\vspace{1pt}\hrule\vspace{4pt}
+
+\begin{project}{Airline Ticket Price Prediction --- ML Regression Pipeline}{Python, Scikit-learn, Pandas, NumPy, Jupyter Notebooks}
+  \item Collected and preprocessed structured travel data, performing exploratory data analysis (EDA) to identify pricing trends, outliers, and key feature correlations.
+  \item Built and validated a regression-based predictive model using cross-validation and hyperparameter tuning, achieving low Mean Absolute Error (MAE) on unseen test data.
+  \item Generated visualizations (charts, correlation heatmaps) to communicate data insights and model findings to both technical and non-technical audiences.
+\end{project}
+
+% ==================== EDUCATION ====================
+\section*{Education}
+\vspace{1pt}\hrule\vspace{4pt}
+\textbf{Bachelor of Technology in Computer Science} \hfill \textbf{Tirumala Engineering College, Narasaraopet} \\
+\textit{January 2021 -- May 2024} \quad CGPA: 7.86 / 10 \quad Percentage: 74.67\%
+
+\textbf{Intermediate (MPC)} \hfill \textbf{Bhavana Junior College, Narasaraopet} \\
+\textit{June 2018 -- March 2020} \quad CGPA: 9.46 / 10
+
+\textbf{Secondary School Certificate} \hfill \textbf{Sindhu High School, Narasaraopet} \\
+\textit{June 2017 -- March 2018} \quad CGPA: 10.0 / 10
+
+\vspace{6pt}
+
+% ==================== CERTIFICATIONS ====================
+\section*{Certifications}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item Cloud Computing --- NPTEL (IIT-backed national certification)
+  \item AI and Machine Learning --- Amazon Web Services (AWS)
+\end{itemize}
+
+% ==================== INTERESTS ====================
+\section*{Interests}
+\vspace{1pt}\hrule\vspace{4pt}
+\begin{itemize}
+  \item Data Engineering, Pipeline Architecture \& Scalable Systems
+  \item AI, Machine Learning \& Large Language Models (LLMs)
+  \item Problem Solving \& Automation
+\end{itemize}
+
+\end{document}

@@ -1,7 +1,7 @@
 % -------------------------------------------------
 % Narasimharao Bhavirisetty – Resume V2
 % -------------------------------------------------
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
@@ -19,7 +19,7 @@
 }
 
 % ----- Page layout -----
-\geometry{a4paper, margin=0.75in}
+\geometry{a4paper, top=0.5in, bottom=0.5in, left=0.65in, right=0.65in}
 \pagestyle{empty}
 
 % ----- Section heading style -----
@@ -43,7 +43,7 @@
 % ==================== PROFESSIONAL SUMMARY ====================
 \section*{Professional Summary}
 \vspace{1pt}\hrule\vspace{4pt}
-Software Engineer with 1.6+ years of experience building production-grade, event-driven backend systems. Specialized in Python stream processing using Apache Kafka and PyFlink, with deep hands-on work in real-time blockchain data pipelines on Solana --- processing 50K+ trade events daily through ClickHouse and Redis. At Algonox, delivered a 40\% improvement in data extraction accuracy through rule-based validation systems and automated KPI reporting. Comfortable working across the full backend lifecycle: system design, streaming architecture, data modeling, and production debugging.
+Software Engineer with 1.6+ years of experience building production-grade, event-driven backend systems. Specialized in Python stream processing using Kafka and PyFlink, with deep hands-on work in real-time data pipelines processing 50K+ trade events daily through ClickHouse and Redis. At Algonox, delivered a 40\% improvement in data extraction accuracy through rule-based validation systems and automated KPI reporting. Comfortable working across the full backend lifecycle: system design, streaming architecture, data modeling, and production debugging.
 
 % ==================== TECHNICAL SKILLS ====================
 \section*{Technical Skills}
@@ -53,7 +53,7 @@ Software Engineer with 1.6+ years of experience building production-grade, event
   \item \textbf{Frameworks \& Tools}: Flask, PyFlink, REST APIs, Git, Postman, VS Code
   \item \textbf{Databases}: MySQL, MSSQL, ClickHouse, Redis
   \item \textbf{Stream Processing}: Apache Kafka, Redpanda, PyFlink Tumbling Windows, Fault-Tolerant Checkpointing
-  \item \textbf{Blockchain / Web3}: Solana, Pump.fun, Protobuf, Event-Driven Architecture
+  \item \textbf{Concepts}: Event-Driven Architecture, OOP, Agile, SDLC, Git, REST APIs
 \end{itemize}
 
 % ==================== PROFESSIONAL EXPERIENCE ====================
@@ -63,8 +63,8 @@ Software Engineer with 1.6+ years of experience building production-grade, event
 \textbf{Software Engineer} \hfill \textbf{Spizen Technologies (CLR3 Ventures), Bangalore, India} \\
 \textit{December 2025 -- Present}
 \begin{itemize}
-  \item Architected an end-to-end Solana token intelligence platform processing 50K+ trade events/day through a multi-stage Kafka $\rightarrow$ PyFlink $\rightarrow$ ClickHouse $\rightarrow$ Redis pipeline, tracking full token lifecycle from creation to graduation or death.
-  \item Engineered fault-tolerant PyFlink streaming jobs with tumbling-window aggregations and checkpointing, reducing duplicate trade records across Kafka topics by \textasciitilde{}95\%, ensuring data integrity for downstream analytics.
+  \item Architected an end-to-end token intelligence platform processing 50K+ trade events/day through a multi-stage Kafka - PyFlink - ClickHouse - Redis pipeline, tracking full token lifecycle from creation to termination.
+  \item Engineered fault-tolerant PyFlink streaming jobs with tumbling-window aggregations and checkpointing, reducing duplicate trade records across Kafka topics by 95\%, ensuring data integrity for downstream analytics.
   \item Built a wallet bot classification engine using behavioral signal analysis to detect wash trading and suspicious patterns, improving investment signal quality and platform trust for end users.
   \item Designed a real-time composite coin scoring system ingesting every on-chain swap event, fusing wallet quality, token quality, and market density metrics to emit sub-second live investment signals.
 \end{itemize}
@@ -96,8 +96,8 @@ Software Engineer with 1.6+ years of experience building production-grade, event
 \section*{Certifications}
 \vspace{1pt}\hrule\vspace{4pt}
 \begin{itemize}
-  \item Cloud Computing --- NPTEL (IIT-backed national certification)
-  \item AI and Machine Learning --- Amazon Web Services (AWS)
+  \item Cloud Computing - NPTEL (IIT-backed national certification)
+  \item AI and Machine Learning - Amazon Web Services (AWS)
 \end{itemize}
 
 % ==================== INTERESTS ====================

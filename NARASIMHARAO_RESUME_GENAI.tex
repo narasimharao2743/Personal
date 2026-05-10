@@ -25,7 +25,7 @@
 
 % ----- Section heading style -----
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{6pt}{2pt}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
 
 % ----- Tighten itemize globally -----
 \setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=*}
@@ -83,23 +83,19 @@ Software Engineer with 1.5 years of experience designing and delivering event-dr
 % ==================== PERSONAL PROJECTS ====================
 \section*{Personal Projects}
 \vspace{1pt}\hrule\vspace{4pt}
-\textbf{RAG-based PDF Q\&A System} \hfill \textit{Python, LangChain, ChromaDB, HuggingFace, Ollama, Flask} \\
-{\small https://github.com/narasimharao2743/rag-pdf-qa}
+\textbf{RAG-based PDF Q\&A System} \hfill \textit{Python, LangChain, ChromaDB, HuggingFace, Ollama, Flask}
 \begin{itemize}
-  \item Built an end-to-end RAG pipeline that ingests PDF documents, generates vector embeddings using HuggingFace sentence-transformers, and stores them in ChromaDB for semantic retrieval.
-  \item Implemented a Flask REST API with endpoints for PDF upload and indexing, and natural language querying returning context-aware answers with source citations.
-  \item Integrated Ollama (llama3) as a local LLM to generate accurate answers from semantically retrieved document chunks with no external API dependency.
+  \item Built an end-to-end RAG pipeline ingesting PDFs, generating HuggingFace vector embeddings, and indexing them in ChromaDB for semantic retrieval.
+  \item Exposed a Flask REST API for PDF upload, document indexing, and natural language querying with source-cited answers.
+  \item Integrated Ollama (llama3) as a local LLM to generate context-aware answers from retrieved chunks — fully offline, no external API.
 \end{itemize}
 
 % ==================== EDUCATION ====================
 \section*{Education}
 \vspace{1pt}\hrule\vspace{4pt}
-\textbf{B.Tech in Computer Science} \hfill \textbf{Tirumala Engineering College, Narasaraopet} \\
-\textit{2021 -- 2024} \quad CGPA: 7.86 / 10
-
-\textbf{Intermediate (MPC)} \hfill \textbf{Bhavana Junior College, Narasaraopet} \quad \textit{2018 -- 2020} \quad CGPA: 9.46 / 10
-
-\textbf{SSC} \hfill \textbf{Sindhu High School, Narasaraopet} \quad \textit{2018} \quad CGPA: 10 / 10
+\textbf{B.Tech in Computer Science} \textbullet{} Tirumala Engineering College, Narasaraopet \hfill \textit{2021 -- 2024} \quad CGPA: 7.86/10 \\[1pt]
+\textbf{Intermediate (MPC)} \textbullet{} Bhavana Junior College, Narasaraopet \hfill \textit{2018 -- 2020} \quad CGPA: 9.46/10 \\[1pt]
+\textbf{SSC} \textbullet{} Sindhu High School, Narasaraopet \hfill \textit{2018} \quad CGPA: 10/10
 
 % ==================== CERTIFICATIONS ====================
 \section*{Certifications}

@@ -1,0 +1,12 @@
+# Personal photo — keep local only, never push to public repo
+photo.jpg
+Profile Photo.jpg
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
